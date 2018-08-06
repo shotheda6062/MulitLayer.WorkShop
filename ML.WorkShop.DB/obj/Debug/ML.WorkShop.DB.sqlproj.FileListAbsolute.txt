@@ -1,0 +1,5 @@
+c:\users\ddmc10608\source\repos\MulitLayer.WorkShop\ML.WorkShop.DB\bin\Debug\ML.WorkShop.DB.dacpac
+c:\users\ddmc10608\source\repos\MulitLayer.WorkShop\ML.WorkShop.DB\bin\Debug\ML.WorkShop.DB.dll
+c:\users\ddmc10608\source\repos\MulitLayer.WorkShop\ML.WorkShop.DB\bin\Debug\ML.WorkShop.DB.pdb
+c:\users\ddmc10608\source\repos\MulitLayer.WorkShop\ML.WorkShop.DB\obj\Debug\ML.WorkShop.DB.dll
+c:\users\ddmc10608\source\repos\MulitLayer.WorkShop\ML.WorkShop.DB\obj\Debug\ML.WorkShop.DB.pdb

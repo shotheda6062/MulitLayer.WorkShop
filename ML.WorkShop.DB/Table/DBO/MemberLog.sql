@@ -1,0 +1,18 @@
+﻿CREATE TABLE [dbo].[MemberLog]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL DEFAULT NEWSEQUENTIALID() ,
+	[Member_Id] UNIQUEIDENTIFIER NOT NULL,
+	[WorkId] INT NOT NULL,
+	[Password] NVARCHAR(50) NOT NULL,
+	[Name] NVARCHAR(50) NOT NULL,
+	[Age] INT NOT NULL,
+	[Email] NVARCHAR(50) NOT NULL,
+	[CreateDateTime] DATETIME NULL,
+	[CreateUserId] NVARCHAR(50) NULL,
+	[LastModifyDateTime] DATETIME NULL,
+	[LastModifyUserId] NVARCHAR(50) NULL,
+	[DeleteDateTime] DATETIME NULL,
+	[DeleteUserId] NVARCHAR(50) NULL, 
+	[Remark] NVARCHAR(MAX) NULL, 
+    CONSTRAINT [PK_MemberLog] PRIMARY KEY ([Id]), 
+)
