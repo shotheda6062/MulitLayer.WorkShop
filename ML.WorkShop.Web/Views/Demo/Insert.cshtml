@@ -1,0 +1,52 @@
+﻿@model ML.WorkShop.Infrastructure.MemberViewModel
+@{
+    ViewBag.Title = "Insert";
+}
+
+@using (Html.BeginForm())
+{
+    <div class="container">
+        <div class="card">
+            <div class="card-header">新增一筆資料</div>
+            <div class="card-body">
+                <div class="form-group">
+                    @Html.LabelFor(item => item.WorkId, new { @for = "textbox" })
+                    @Html.TextBoxFor(item => item.WorkId, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(item => item.CompanyId)
+                    <select id="CompanyId" name="CompanyId" class="form-control">
+                        <option value="2AC2BDF1-4F8E-E811-825E-54E1AD1FCD96">DDMC</option>
+                        <option value="77A6A81A-508E-E811-825E-54E1AD1FCD96">FENC</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(item => item.Password)
+                    @Html.TextBoxFor(item => item.Password, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(item => item.RoleName)
+                    @Html.TextBoxFor(item => item.RoleName, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(item => item.Email)
+                    @Html.TextBoxFor(item => item.Email, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(item => item.Name)
+                    @Html.TextBoxFor(item => item.Name, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(item => item.Age)
+                    @Html.TextBoxFor(item => item.Age, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="card-footer">
+                <input class="btn btn-outline-primary" type="submit" value="Try Add" />
+            </div>
+        </div>
+
+
+
+    </div>
+}

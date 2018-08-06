@@ -1,0 +1,61 @@
+﻿@model IEnumerable<ML.WorkShop.Infrastructure.ViewModel.MemberListViewModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="container-fluid">
+
+    <div class="jumbotron">
+        <h1>練習三層式架構的解答展示</h1>
+        <p>就努力練習吧！！</p>
+    </div>
+
+    <button class="btn btn-info" onclick="location.href='@Url.Action("Insert", "Demo")'">New Member</button>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(item => item.CompanyId)</th>
+                <th>@Html.DisplayNameFor(item => item.CompanyName)</th>
+                <th>@Html.DisplayNameFor(item => item.WorkId)</th>
+                <th>@Html.DisplayNameFor(item => item.Name)</th>
+                <th>@Html.DisplayNameFor(item => item.Email)</th>
+                <th>@Html.DisplayNameFor(item => item.Admin)</th>
+                <th>@Html.DisplayNameFor(item => item.Member)</th>
+                <th>@Html.DisplayNameFor(item => item.Lock)</th>
+                <th>@Html.DisplayNameFor(item => item.LastLoginDateTime)</th>
+                <th>@Html.DisplayNameFor(item => item.LastModifyPasswordDate)</th>
+                <th>@Html.DisplayNameFor(item => item.Remark)</th>
+                <th>Setting</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelitem => item.CompanyId)</td>
+                    <td>@Html.DisplayFor(modelitem => item.CompanyName)</td>
+                    <td>@Html.DisplayFor(modelitem => item.WorkId)</td>
+                    <td>@Html.DisplayFor(modelitem => item.Name)</td>
+                    <td>@Html.DisplayFor(modelitem => item.Email)</td>
+                    <td>@Html.DisplayFor(modelitem => item.Admin)</td>
+                    <td>@Html.DisplayFor(modelitem => item.Member)</td>
+                    <td>@Html.DisplayFor(modelitem => item.Lock)</td>
+                    <td>@Html.DisplayFor(modelitem => item.LastLoginDateTime)</td>
+                    <td>@Html.DisplayFor(modelitem => item.LastModifyPasswordDate)</td>
+                    <td>@Html.DisplayFor(modelitem => item.Remark)</td>
+                    <td>
+                        <button type="button" class="btn btn-primary" onclick="location.href='@Url.Action("Edit", new { id = item.Id })    '">
+                            <span class="glyphicon glyphicon-pencil"></span>編輯
+                        </button>
+
+                        <button type="button" class="btn btn-primary" onclick="location.href='@Url.Action("Delete", new { id = item.Id})    '">
+                            <span class="glyphicon glyphicon-pencil"></span>DELETE
+                        </button>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+</div>

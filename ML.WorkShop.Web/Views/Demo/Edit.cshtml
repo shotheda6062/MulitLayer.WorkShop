@@ -1,0 +1,87 @@
+﻿@model ML.WorkShop.Infrastructure.ViewModel.MemberDetailViewModel
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+
+@using (Html.BeginForm())
+{
+    <div class="container">
+        <div class="card">
+            <div class="card-header">更新一筆資料</div>
+            <div class="card-body">
+                <div class="form-group">
+                    @Html.LabelFor(item => item.CompanyId)
+                    @Html.HiddenFor(item => item.CompanyId, new { Id = "HidCompany", @Name = "HidCompany" })
+                    <select id="CompanyId" name="CompanyId">
+                        <option value="77A6A81A-508E-E811-825E-54E1AD1FCD96">FENC</option>
+                        <option value="2AC2BDF1-4F8E-E811-825E-54E1AD1FCD96">DDMC</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(item => item.Password)
+                    @Html.PasswordFor(item => item.Password, new { @class = "form-control" })
+                </div>
+                @Html.LabelFor(item => item.WorkId)
+                @Html.TextBoxFor(item => item.WorkId, new { @class = "form-control" })
+                <div class="form-group">
+                    @Html.LabelFor(item => item.Name)
+                    @Html.TextBoxFor(item => item.Name, new { @class = "form-control" })
+                </div>
+                @Html.LabelFor(item => item.Age)
+                @Html.TextBoxFor(item => item.Age, new { @class = "form-control" })
+                <div class="form-group">
+                    @Html.LabelFor(item => item.Email)
+                    @Html.TextBoxFor(item => item.Email, new { @class = "form-control" })
+                </div>
+                @Html.LabelFor(item => item.Admin)
+                @Html.TextBoxFor(item => item.Admin, new { @class = "form-control" })
+                <div class="form-group">
+                    @Html.LabelFor(item => item.Member)
+                    @Html.TextBoxFor(item => item.Member, new { @class = "form-control" })
+                </div>
+                @Html.LabelFor(item => item.Lock)
+                @Html.TextBoxFor(item => item.Lock, new { @class = "form-control" })
+                <div class="form-group">
+                    @Html.LabelFor(item => item.CreateDateTime)
+                    @Model.CreateDateTime
+                </div>
+                @Html.LabelFor(item => item.CreateUserId)
+                @Model.CreateUserId
+                <div class="form-group">
+                    @Html.LabelFor(item => item.LastModifyUserId)
+                    @Model.LastModifyUserId
+                </div>
+                @Html.LabelFor(item => item.LastModifyDateTime)
+                @Model.LastModifyDateTime
+                <div class="form-group">
+                    @Html.LabelFor(item => item.LastLoginDateTime)
+                    @Model.LastLoginDateTime
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(item => item.LastModifyPasswordDate)
+                    @Model.LastModifyPasswordDate
+                </div>
+                <div class="card-footer">
+                    <input type="submit" value="SUBMIT" />
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+
+            var companyid = $('#HidCompany').val();
+
+            if (companyid != "DDMC") {
+                $('#CompanyId').val("77A6A81A-508E-E811-825E-54E1AD1FCD96");
+            } else {
+                $('#CompanyId').val("2AC2BDF1-4F8E-E811-825E-54E1AD1FCD96");
+            }
+        })
+    </script>
+}
