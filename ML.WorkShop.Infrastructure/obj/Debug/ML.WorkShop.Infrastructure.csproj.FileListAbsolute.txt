@@ -1,0 +1,6 @@
+c:\users\ddmc10608\source\repos\MulitLayer.WorkShop\ML.WorkShop.Infrastructure\bin\Debug\ML.WorkShop.Infrastructure.dll
+c:\users\ddmc10608\source\repos\MulitLayer.WorkShop\ML.WorkShop.Infrastructure\bin\Debug\ML.WorkShop.Infrastructure.pdb
+c:\users\ddmc10608\source\repos\MulitLayer.WorkShop\ML.WorkShop.Infrastructure\obj\Debug\ML.WorkShop.Infrastructure.csproj.CoreCompileInputs.cache
+c:\users\ddmc10608\source\repos\MulitLayer.WorkShop\ML.WorkShop.Infrastructure\obj\Debug\ML.WorkShop.Infrastructure.dll
+c:\users\ddmc10608\source\repos\MulitLayer.WorkShop\ML.WorkShop.Infrastructure\obj\Debug\ML.WorkShop.Infrastructure.pdb
+C:\Users\ddmc10608\source\repos\MulitLayer.WorkShop\ML.WorkShop.Infrastructure\obj\Debug\ML.WorkShop.Infrastructure.csprojAssemblyReference.cache
